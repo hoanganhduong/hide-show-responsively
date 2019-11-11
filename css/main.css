@@ -20,3 +20,46 @@ html {
 body{
   margin: 0;
 }
+
+@media only screen and (min-width: 25em) {
+
+  img {
+    display: block;
+    width: 100%;
+ }
+
+  .dino-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .dino {
+    width: 50%;
+  }
+
+  .dino:last-child,
+  .dino:nth-child(3) {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .dino-wrap {
+  flex-wrap: nowrap;
+  }
+
+  .dino:first-child {
+    width: 0%;
+  }
+
+}
+
+@media only screen and (min-width: 60em)  {
+
+  .dino:first-child{
+    width: 50%;
+  }
+
+}
