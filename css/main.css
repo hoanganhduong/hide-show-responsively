@@ -32,6 +32,11 @@ img {
   display: block;
 }
 
+.dino:last-child,
+.dino:nth-child(2) {
+  display: none;
+}
+
 @media only screen and (min-width: 25em) {
 
   img {
@@ -53,6 +58,11 @@ img {
     width: 50%;
   }
 
+  .dino:last-child,
+  .dino:nth-child(2) {
+    display: block;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -69,6 +79,11 @@ img {
     display: none;
   }
 
+  .dino:last-child,
+  .dino:nth-child(2) {
+    display: block;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -78,6 +93,11 @@ img {
   }
 
   .dino:first-child {
+    display: block;
+  }
+
+  .dino:last-child,
+  .dino:nth-child(2) {
     display: block;
   }
 
